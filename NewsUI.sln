@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewsUI", "NewsUI\NewsUI.csproj", "{A0353932-C62B-422E-8EB5-386246BACEFE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A0353932-C62B-422E-8EB5-386246BACEFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0353932-C62B-422E-8EB5-386246BACEFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0353932-C62B-422E-8EB5-386246BACEFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0353932-C62B-422E-8EB5-386246BACEFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3C4FD21-FDA6-489D-A28A-24FAA392BFBE}
+	EndGlobalSection
+EndGlobal
