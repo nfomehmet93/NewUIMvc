@@ -2,22 +2,21 @@
 @{
     ViewData["Title"] = "GetNewsDetails";
     Layout = "~/Views/Shared/_newsAmpLayout.cshtml";
-    ViewData["CanonicalUrl"] = Model.IsSuccess ? Model.Data != null ? "haber-" + Model.Data.Id : null:null;
+    ViewData["CanonicalUrl"] = Model.IsSuccess ? Model.Data != null ? "haber-" + Model.Data.Id : null : null;
 }
 
-@if (Model.IsSuccess)
-{
-        <div class="row">
-                @if (Model.Data != null)
-                {
-                    <h1>@Model.Data.Title</h1>
-                    <h4>@Model.Data.Id</h4>
-                    <h4>@Model.Data.StartDate</h4>
-                    <p>@Html.Raw(Model.Data.Text)</p>
 
-                }
-            </div>
-}
+<div class="row">
+    @if (Model.Data != null)
+    {
+        <h1>@Model.Data.Title</h1>
+        <h4>@Model.Data.Id</h4>
+        <h4>@Model.Data.StartDate</h4>
+        <p>@Html.Raw(Model.Data.Text+"ssdfds")</p>
+
+    }
+</div>
+
 
 
 

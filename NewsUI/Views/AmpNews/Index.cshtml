@@ -1,29 +1,22 @@
 ﻿@model NewsUI.Models.ResponseNewsModel
 @{
     ViewData["Title"] = "Index";
+    ViewData["CanonicalUrl"] = "/haberler";
     Layout = "~/Views/Shared/_newsAmpLayout.cshtml";
 }
 
 
-@if (Model.IsSuccess)
-{
-    <div class="row">
-        @foreach (var item in Model.Data)
-        {
-            <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-                    <div class="card-body">
-                        <h5 class="card-title">@item.Title</h5>
-                        <a href="haber-@item.Id" class="btn btn-primary">Detay</a>
-                    </div>
-                </div>
+<div class="row">
+    @foreach (var item in Model.Data)
+    {
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">@item.Title</h5>
+                <a href="haber-@item.Id" class="btn btn-primary">Detay</a>
             </div>
-        }
-    </div>
-}
-else
-{
-    <p>Haber Bulunamadı!</p>
-}
+        </div>
+    }
+</div>
+
 
 

@@ -1,20 +1,24 @@
 ﻿@model NewsUI.Models.ResponseNewsDetailModel
 @{
-    ViewData["Title"] = "GetNewsDetails";
+    ViewData["Title"] = Model!=null?Model.Data.Title:"Haberler";
     Layout = "~/Views/Shared/_newsLayout.cshtml";
 }
-@if (Model.IsSuccess)
-{
+
     <div class="row">
-        <div class="col-md-12">
-            @if (Model.Data != null)
-            {
-                <h1>@Model.Data.Title</h1>
-                <p>@Html.Raw(Model.Data.Text)</p>
-                <h5>@Model.Data.StartDate</h5>
-                <h6>@Model.Data.Id</h6>
-            }
+        @if (Model.Data != null)
+        {
+        <div class="jumbotron">
+            <h1 class="display-4">@Model.Data.Title</h1>
+            <hr class="my-4">
+            <p>@Html.Raw(Model.Data.Text)</p>
+            <p class="lead">
+                @Model.Data.StartDate
+            </p>
         </div>
+        <div class="tab-content"></div>
+        <h6>@Model.Data.Id</h6>
+    }
+
     </div>
-}
+
 
